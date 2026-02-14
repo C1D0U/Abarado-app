@@ -6,6 +6,11 @@ use App\Http\Controllers\UserController;
 use App\Services\UserService;
 use Illuminate\Support\Facades\Response;
 
+// Exercise #1
+Route::get('/blade', function () {
+    return view('welcome'); // 
+});
+
 
 Route::get('/', function () {
     return 'hello world!';
